@@ -12,7 +12,39 @@ header {
     
     text-align: center;
     padding: 20px;
+    text-align:right;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12;
   }
+
+
+
+.navbar {
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+  
+  }
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: greenyellow;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+
+
 
 h1 {
 
@@ -81,4 +113,15 @@ img {
 
 img:hover {
     opacity: 1.0;
+  }
+
+
+
+footer{
+    padding: 8px;
+    text-align:center;
+    font-size: 12px;
+    color: white;
+    position: sticky;
+    bottom: 0;
   }
