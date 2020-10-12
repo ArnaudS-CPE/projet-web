@@ -1,0 +1,84 @@
+
+
+body {
+
+    text-align: center;
+    font-family: "Staatliches";
+    background-color: rgb(200, 200, 200);
+    font-size: 1.2vw;
+}
+
+header {
+    
+    text-align: center;
+    padding: 20px;
+  }
+
+h1 {
+
+    color: darkcyan;
+    font-size: 5vw;
+}
+
+h2 {
+
+    color: rgb(179, 80, 209);
+    font-size: 3.5vw;
+}
+
+
+article {
+    position: relative;
+
+    width: 31%;
+    height: 31vw;
+    border: 1px solid rgb(255, 0, 0);
+    margin: 1%;
+    float: left;
+}
+
+.destName {
+    position: absolute;
+    font-size: 3vw;
+    top : 10%;
+    width: 100%;
+}
+
+.destPrice {
+    position: absolute;
+    left: 50%;
+    top : 60%;
+    width: 50%;
+}
+
+.destTemp {
+    position: absolute;
+    top : 60%;
+    width: 50%;
+}
+
+.destValidator {
+    position: absolute;
+    top : 80%;
+    width: 100%;
+}
+
+.button {
+    font-size: 2vw;
+    padding: 10px;
+    background-color: rgb(176, 190, 179);
+    border: 3px solid slateblue;
+}
+
+
+
+img {
+    width: 100%;
+    height: 31vw;
+    opacity: 0.32;
+}
+
+
+img:hover {
+    opacity: 1.0;
+  }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='../css/style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+</head>
+<body>
+
+    <header>
+        <h1>Agence de voyage</h1>
+        <h2>Vous rêvez de voyage ?</h2>
+    </header>
+
+    
+    <nav>
+        <a href="homepage.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="identification.html">Se connecter</a>
+        <a href="panier.html">Votre panier</a>
+    </nav>
+
+    <h3>Vos coordonnées :</h3>
+    <form action="validation.html" method="GET">
+        Nom :<br>
+        <input type="text" name="lastname"><br>
+        Prénom :<br>
+        <input type="text" name="firstname"><br>
+        Adresse mail :<br>
+        <input type="email" name="email"><br>
+        Téléphone :<br>
+        <input type="tel" name="tel"><br>
+        Date de départ :<br>
+        <input type="date" name="datedépart"><br>
+        Date de retour :<br>
+        <input type="date" name="dateretour"><br>
+        Nombre d'adultes :<br>
+        <input type="number" name="adultes" min="0"><br>
+        Nombre d'enfants :<br>
+        <input type="number" name="enfants" min="0"><br>
+        Option petit déjeuner :
+        <input type="checkbox" name="petitdej" value="petitdej" ><br>
+        Demande de renseignements :<br>
+        <textarea>Renseignements</textarea><br>
+        <input type="submit" value="Valider"><br>
+        <input type="submit" value="Annuler"><br><br>
+    </form>
+    Prix total :<br>
+
+    <footer>
+        <nav>
+            <a href="homepage.html">Accueil</a>
+            <a href="contact.html">Contact</a>
+            <a href="identification.html">Se connecter</a>
+        </nav>
+    </footer>
+</body>
+</html>
