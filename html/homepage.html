@@ -30,20 +30,22 @@
         <!-- La checkbox que je choisis cochée au démarrage -->
         <input id="toggle-block" name="toggle-block" type="checkbox" />
 
-        <div id="filtre">
-            <form>
-                <input type="checkbox" name="continent" value="Europe" checked> Europe<br>
-                <input type="checkbox" name="continent" value="Amérique" checked> Amérique<br>
-                <input type="checkbox" name="continent" value="Afrique" checked> Afrique<br>
-                <input type="checkbox" name="continent" value="Asie" checked> Asie<br>
-                <input type="checkbox" name="continent" value="Océanie" checked> Océanie<br>
+        <div id="divFiltre">
+            <form name="filter"></form>
+
+                <input  onchange="applyFilter()" type="checkbox" id="europe" value="Europe" checked> Europe<br>
+                <input  onchange="applyFilter()" type="checkbox" id="amérique" value="Amérique" checked> Amérique<br>
+                <input  onchange="applyFilter()" type="checkbox" id="afrique" value="Afrique" checked> Afrique<br>
+                <input  onchange="applyFilter()" type="checkbox" id="asie" value="Asie" checked> Asie<br>
+                <input  onchange="applyFilter()" type="checkbox" id="océanie" value="Océanie" checked> Océanie<br>
                 Animaux acceptés :
-                <input type="checkbox" name="animaux" value="animaux" checked> <br>
+                <input  onchange="applyFilter()" type="checkbox" name="animaux" value="animaux" checked> <br>
                 Petit déjeuner compris :
-                <input type="checkbox" name="petitdej" value="petitdej" checked> <br>
+                <input  onchange="applyFilter()" type="checkbox" name="petitdej" value="petitdej" checked> <br>
                 Prix :<br>
-                <input type="range" name="curseur" value="1000" min="200" max="2000" step="30"><br>
-                <input type="submit" value="Supprimer les filtres">
+                <input  onchange="applyFilter()" type="range" name="curseur" value="1000" min="200" max="2000" step="30"><br>
+                <input  onchange="applyFilter()" type="submit" value="Supprimer les filtres">
+
             </form>
         </div>
     </div>
@@ -53,7 +55,7 @@
 
         <template id="listeDest">
 
-            <div class="element">
+            <div class="element" id="div">
                 <img id="imgDest" src="../images/newyork.jpg" alt="newyork"/>
                 <h3 id = "destNom" class="destName">{{nom}}</h3>
                 <p  id = "destPrix" class="destPrice">{{prix}}€</p>

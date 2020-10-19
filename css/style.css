@@ -73,14 +73,14 @@ h2 {
     display: none;
 }
 
-#filtre {
+#divFiltre {
     display: none;
     background: rgb(160, 160, 160);
     padding: 15px;
 
 }
 
-#toggle-block:checked + #filtre{
+#toggle-block:checked + #divFiltre{
     display: block;
 }
 
