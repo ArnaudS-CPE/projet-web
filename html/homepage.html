@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agence de voyage</title>
 </head>
-<body>
+<body onload="drawDestinations()">
 
     <header>
         <h1>Agence de voyage</h1>
@@ -39,70 +39,24 @@
         </form>
     </div>
 
-    <section>
+    <section id = "section">
         <h2>Destinations</h2>
 
-        <article>
-            <img src="../images/newyork.jpg" alt="newyork"/>
-            <h3 class="destName">New York</h3>
-            <p class="destPrice">400€</p>
-            <p class="destTemp">30°C</p>
+        <template id="listeDest">
 
-            <div class="destValidator">
-                <a class="button" href="reservation.html" >Valider</a>
+            <div class="element">
+                <img id="imgDest" src="../images/newyork.jpg" alt="newyork"/>
+                <h3 id = "destNom" class="destName">{{nom}}</h3>
+                <p  id = "destPrix" class="destPrice">{{prix}}€</p>
+                <p class="destTemp">30°C</p>
+
+                <div class="destValidator">
+                    <a id = "Validator" class="button" href="reservation.html" >Valider</a>
+                </div>
             </div>
 
-        </article>
+        </template>
 
-        <article>
-            <img src="../images/miami.jpg" alt="miami"/>
-            <h3 class="destName">Miami</h3>
-            <p class="destPrice">500€</p>
-            <p class="destTemp">40°C</p>
-            <div class="destValidator">
-                <a class="button" href="reservation.html" >Valider</a>
-            </div>
-        </article>
-
-        <article>
-            <img src="../images/losangeles.jpg" alt="losangeles"/>
-            <h3 class="destName">Los Angeles</h3>
-            <p class="destPrice">600€</p>
-            <p class="destTemp">20°C</p>
-            <div class="destValidator">
-                <a class="button" href="reservation.html" >Valider</a>
-            </div>
-        </article>
-
-        <article>
-            <img src="../images/losangeles.jpg" alt="losangeles"/>
-            <h3 class="destName">Los Angeles</h3>
-            <p class="destPrice">600€</p>
-            <p class="destTemp">20°C</p>
-            <div class="destValidator">
-                <a class="button" href="reservation.html" >Valider</a>
-            </div>
-        </article>
-
-        <article>
-            <img src="../images/losangeles.jpg" alt="losangeles"/>
-            <h3 class="destName">Los Angeles</h3>
-            <p class="destPrice">600€</p>
-            <p class="destTemp">20°C</p>
-            <div class="destValidator">
-                <a class="button" href="reservation.html" >Valider</a>
-            </div>
-        </article>
-
-        <article>
-            <img src="../images/losangeles.jpg" alt="losangeles"/>
-            <h3 class="destName">Los Angeles</h3>
-            <p class="destPrice">600€</p>
-            <p class="destTemp">20°C</p>
-            <div class="destValidator">
-                <a class="button" href="reservation.html" >Valider</a>
-            </div>
-        </article>
 
     </section>
 
@@ -116,4 +70,5 @@
 
 
 </body>
+<script src='../js/script.js'></script>
 </html>
