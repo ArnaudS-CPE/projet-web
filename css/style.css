@@ -14,12 +14,10 @@ header {
     padding: 20px;
     text-align:right;
     color: white;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 12;
   }
 
+
+/* barre de nav en haut*/
 
 
 .navbar {
@@ -44,6 +42,7 @@ header {
     text-decoration: none;
 }
 
+/* trucs généraux*/
 
 
 h1 {
@@ -58,13 +57,42 @@ h2 {
     font-size: 3.5vw;
 }
 
+/* filtre */
+
+
+#menuFiltre label {
+    position: relative;
+    background: rgb(160, 160, 160);
+    padding: 15px;
+    color: rgb(35, 16, 148);
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+#toggle-block {
+    display: none;
+}
+
+#filtre {
+    display: none;
+    background: rgb(160, 160, 160);
+    padding: 15px;
+
+}
+
+#toggle-block:checked + #filtre{
+    display: block;
+}
+
+
+/*partie des templates*/
 
 .element {
     position: relative;
 
     width: 31%;
     height: 31vw;
-    border: 1px solid rgb(255, 0, 0);
+    /*border: 1px solid rgb(255, 0, 0);*/
     margin: 1%;
     float: left;
 }
@@ -114,6 +142,7 @@ img:hover {
   }
 
 
+/* barre de nav en bas*/
 
 footer {
 

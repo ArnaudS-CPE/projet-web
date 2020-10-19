@@ -22,21 +22,30 @@
         <a href="panier.html">Votre panier</a>
     </nav>
 
-    <div>
-        <form>
-            <input type="checkbox" name="continent" value="Europe" checked> Europe<br>
-            <input type="checkbox" name="continent" value="Amérique" checked> Amérique<br>
-            <input type="checkbox" name="continent" value="Afrique" checked> Afrique<br>
-            <input type="checkbox" name="continent" value="Asie" checked> Asie<br>
-            <input type="checkbox" name="continent" value="Océanie" checked> Océanie<br>
-            Animaux acceptés :
-            <input type="checkbox" name="animaux" value="animaux" checked> <br>
-            Petit déjeuner compris :
-            <input type="checkbox" name="petitdej" value="petitdej" checked> <br>
-            Prix :<br>
-            <input type="range" name="curseur" value="1000" min="200" max="2000" step="30"><br>
-            <input type="submit" value="Supprimer les filtres">
-        </form>
+    <div id="menuFiltre">
+
+        <!-- Le label -->
+        <label for="toggle-block">Filtre</label>
+    
+        <!-- La checkbox que je choisis cochée au démarrage -->
+        <input id="toggle-block" name="toggle-block" type="checkbox" />
+
+        <div id="filtre">
+            <form>
+                <input type="checkbox" name="continent" value="Europe" checked> Europe<br>
+                <input type="checkbox" name="continent" value="Amérique" checked> Amérique<br>
+                <input type="checkbox" name="continent" value="Afrique" checked> Afrique<br>
+                <input type="checkbox" name="continent" value="Asie" checked> Asie<br>
+                <input type="checkbox" name="continent" value="Océanie" checked> Océanie<br>
+                Animaux acceptés :
+                <input type="checkbox" name="animaux" value="animaux" checked> <br>
+                Petit déjeuner compris :
+                <input type="checkbox" name="petitdej" value="petitdej" checked> <br>
+                Prix :<br>
+                <input type="range" name="curseur" value="1000" min="200" max="2000" step="30"><br>
+                <input type="submit" value="Supprimer les filtres">
+            </form>
+        </div>
     </div>
 
     <section id = "section">
