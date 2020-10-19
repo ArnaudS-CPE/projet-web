@@ -5,9 +5,10 @@
     <link rel='stylesheet' href='../css/style.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <scrip src='reservation.js'></scrip>
     <title>Page récapitulatif</title>
 </head>
-<body>
+<body onload="completer()">
 
     <header>
         <h1>Agence de voyage</h1>
@@ -22,11 +23,37 @@
         <a href="panier.html">Votre panier</a>
     </nav>
 
-    <h3>Informations</h3>
+    <h3>Validation</h3>
 
-    <p>plusieurs infos...</p>
+    <p>Veulliez vérifier vos informations :</p>
 
-    <p>Numéro de réservation : 51425WS</p>
+    <ul>
+        <li>Nom : </li>
+        <li>Prénom : </li>
+        <li>Adresse email : </li>
+        <li>Numéro de téléphone : </li>
+        <li>Date de départ : </li>
+        <li>Date d'arrivée</li>
+        <li>Nombre d'adultes : </li>
+        <li>Nombre d'enfants : </li>
+        <li>Petit déjeuner inclus : </li>
+        <li>Remarques : </li>
+    </ul>
+    <br>
+
+    <p>Vorte numéro de commande : </p>
+
+
+    <p id="numero"></p>
+    <script> 
+    var n = Math.floor(Math.random()*100000)
+    document.getElementById("numero").innerHTML = n 
+    </script>
+    <br>
+
+    <button onclick="reservation.html">Annuler</button>
+    <button onclick="homepage.html">Valider</button>
+
 
 
     <footer>

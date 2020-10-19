@@ -5,6 +5,7 @@
     <link rel='stylesheet' href='../css/style.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <scrip src='reservation.js'></scrip>
     <title>Réservation</title>
 </head>
 <body>
@@ -19,35 +20,36 @@
         <a href="homepage.html">Accueil</a>
         <a href="contact.html">Contact</a>
         <a href="identification.html">Se connecter</a>
-        <a href="panier.html">Votre panier</a>
+        <a href="panier.html">Votre panier &#128722</a>
     </nav>
 
     <h3>Vos coordonnées :</h3>
-    <form action="validation.html" method="GET">
+    <form name="informations" onsubmit="formulaire()" action="validation.html" methode="post" id="select">
         Nom :<br>
-        <input type="text" name="lastname"><br>
+        <input type="text" name="lastname" required><br>
         Prénom :<br>
-        <input type="text" name="firstname"><br>
+        <input type="text" name="firstname" required><br>
         Adresse mail :<br>
-        <input type="email" name="email"><br>
+        <input type="email" name="email" required><br>
         Téléphone :<br>
         <input type="tel" name="tel"><br>
         Date de départ :<br>
-        <input type="date" name="datedépart"><br>
+        <input type="date" name="datedépart" required><br>
         Date de retour :<br>
-        <input type="date" name="dateretour"><br>
+        <input type="date" name="dateretour" required><br>
         Nombre d'adultes :<br>
-        <input type="number" name="adultes" min="0"><br>
+        <input type="number" name="adultes" min="0" id="ad" onchange="prix()" required><br>
         Nombre d'enfants :<br>
-        <input type="number" name="enfants" min="0"><br>
+        <input type="number" name="enfants" min="0" id="en" onchange="prix()" required><br>
         Option petit déjeuner :
-        <input type="checkbox" name="petitdej" value="petitdej" ><br>
+        <input type="checkbox" name="petitdej" value="petitdej" id="pe" onchange="prix()"><br>
         Demande de renseignements :<br>
-        <textarea>Renseignements</textarea><br>
-        <input type="submit" value="Valider"><br>
-        <input type="submit" value="Annuler"><br><br>
+        <textarea name="renseignements">Renseignements</textarea><br>
+        <input type="submit" name="valider"><br>
+        <input type="reset" name="annuler"><br><br>
     </form>
-    Prix total :<br>
+    <br>
+    <p id="prix"></p>
 
     <footer>
         <nav>
