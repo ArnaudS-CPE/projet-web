@@ -26,25 +26,27 @@
 
         <!-- Le label -->
         <label for="toggle-block">Filtre</label>
-    
+
         <!-- La checkbox que je choisis cochée au démarrage -->
         <input id="toggle-block" name="toggle-block" type="checkbox" />
 
         <div id="divFiltre">
             <form name="filter"></form>
 
-                <input  onchange="applyFilter()" type="checkbox" id="europe" value="Europe" checked> Europe<br>
-                <input  onchange="applyFilter()" type="checkbox" id="amérique" value="Amérique" checked> Amérique<br>
-                <input  onchange="applyFilter()" type="checkbox" id="afrique" value="Afrique" checked> Afrique<br>
-                <input  onchange="applyFilter()" type="checkbox" id="asie" value="Asie" checked> Asie<br>
+                <input  onchange="applyFilter()" type="checkbox" id="europe" value="Europe" checked> Europe
+                <input  onchange="applyFilter()" type="checkbox" id="amérique" value="Amérique" checked> Amérique
+                <input  onchange="applyFilter()" type="checkbox" id="afrique" value="Afrique" checked> Afrique
+                <input  onchange="applyFilter()" type="checkbox" id="asie" value="Asie" checked> Asie
                 <input  onchange="applyFilter()" type="checkbox" id="océanie" value="Océanie" checked> Océanie<br>
                 Animaux acceptés :
-                <input  onchange="applyFilter()" type="checkbox" name="animaux" value="animaux" checked> <br>
+                <input  onchange="applyFilter()" type="checkbox" id="animaux" value="animaux"> <br>
                 Petit déjeuner compris :
-                <input  onchange="applyFilter()" type="checkbox" name="petitdej" value="petitdej" checked> <br>
+                <input  onchange="applyFilter()" type="checkbox" id="petitdej" value="petitdej"> <br>
                 Prix :<br>
-                <input  onchange="applyFilter()" type="range" name="curseur" value="1000" min="200" max="2000" step="30"><br>
-                <input  onchange="applyFilter()" type="submit" value="Supprimer les filtres">
+                <input  onchange="applyFilter()" type="range" id="range_min" min="0" max="1000" step="10">
+                de <span id="prix_min">0</span>€ à <span id="prix_max">1000</span>€
+                <input  onchange="applyFilter()" type="range" id="range_max" min="0" max="1000" step="10"><br>
+                <input  onclick="resetFilter()" type="submit" value="Supprimer les filtres">
 
             </form>
         </div>
